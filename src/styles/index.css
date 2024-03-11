@@ -1,17 +1,14 @@
-html {
+body {
     padding: 40px;
-    width: 170px;
-    height: 100%;
-    margin: 0 auto;
 }
 
 .trafficlight {
     background: #222;
     width: 170px;
-    height: 400px;
     border-radius: 20px;
     position: relative;
     border: solid 5px #333;
+    margin: auto;
 }
 
 .protector {
@@ -41,13 +38,7 @@ html {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    left: 35px;
-    border: solid 2px red;
-    box-shadow:
-        0 0 20px #111 inset,
-        0 0 10px red;
+    margin: 20px auto;
 }
 
 .yellow {
@@ -55,13 +46,7 @@ html {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: solid 2px yellow;
-    position: absolute;
-    top: 145px;
-    left: 35px;
-    box-shadow:
-        0 0 20px #111 inset,
-        0 0 10px yellow;
+    margin: 20px auto;
 }
 
 .green {
@@ -69,11 +54,41 @@ html {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: solid 2px lime;
-    position: absolute;
-    top: 270px;
-    left: 35px;
+    margin: 20px auto;
+}
+
+.purple {
+    background: purple;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.glow-red {
+    box-shadow:
+        0 0 20px #111 inset,
+        0 0 10px red;
+    border: solid 2px red;
+}
+
+.glow-yellow {
+    box-shadow:
+        0 0 20px #111 inset,
+        0 0 10px yellow;
+    border: solid 2px yellow;
+}
+
+.glow-green {
     box-shadow:
         0 0 20px #111 inset,
         0 0 10px lime;
+    border: solid 2px lime;
+}
+
+.glow-purple {
+    box-shadow:
+        0 0 20px #111 inset,
+        0 0 10px purple;
+    border: solid 2px purple;
 }
