@@ -10,13 +10,13 @@ const Home = () => {
 	const [purpleLight, setPurpleLight] = useState(false);
 
 	// handles the event for the cycle lights button
-	let counter = -1;
+	const [counter, setCounter] = useState(0);
 	let colors = ["red", "yellow", "green"];
 	const cycleLightHandler = () => {
-		counter++;
-		//(counter < color.length - 1) ? counter++ : counter = 0;
+		const newCounter = (counter < colors.length - 1) ? counter + 1 : 0;
+		setCounter(newCounter)
 		setSelectedColor(colors[counter]);
-		console.log(colors[counter]);
+		console.log(counter);
 	};
 
 	// handles purple light
